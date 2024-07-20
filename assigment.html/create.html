@@ -1,0 +1,80 @@
+<html>
+<style>
+body {
+   font-family: Arial, sans-serif;
+   margin: 0;
+   padding: 0;
+   color: #333;
+}
+
+.grid-container {
+   display: grid;
+   grid-template-columns: auto auto;
+   padding: 10px;
+}
+
+.grid-item {
+   background-color: rgba(255, 255, 255, 0.8);
+   border: 1px solid rgba(0, 0, 0, 0.8);
+   padding: 20px;
+   font-size: 30px;
+   text-align: center;
+}
+
+.item1 {
+   grid-column: 1;
+   background-color: #87ceeb;
+}
+
+.item2 {
+   grid-column: 2;
+   background-color: #87ceeb;
+}
+
+.item3 {
+   grid-column: 1 / span 2;
+   background-color: #87ceeb;
+}
+
+.item4 {
+   grid-column: 1 / span 2;
+   background-color: #87ceeb;
+}
+
+.item5 {
+   grid-column: 1;
+   background-color: #87ceeb;
+}
+
+.item6 {
+   grid-column: 2;
+   background-color: #87ceeb;
+}
+</style>
+<body>
+   <div class="grid-container">
+      <form>
+         <input type="text" id="name" name="name" placeholder="Your name..">
+         <input type="text" id="email" name="email" placeholder="Your email..">
+         <input type="text" id="phone" name="phone" placeholder="Your phone..">
+         <input type="submit" value="Submit">
+     </form>
+       
+       <div class="grid-item item3">
+           <iframe src="https://www.google.com/maps/embed?pb=!" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+       </div>
+       <div class="grid-item item4">
+           <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+       </div>
+       <div class="grid-item item5">
+       </div>
+       <div class="grid-item item6">
+           <form>
+               <input type="text" id="gender" name="gender" placeholder="Your gender..">
+               <input type="text" id="job" name="job" placeholder="Your job..">
+               <input type="submit" value="Submit">
+           </form>
+       </div>
+   </div>
+</body>
+</html>
